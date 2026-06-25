@@ -1,0 +1,61 @@
+.button {
+  border: none;
+  background-color: rgb(11, 14, 12);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+  backface-visibility: hidden;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.button.number:hover {
+  background-color: rgb(50, 60, 55);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button.operator:hover {
+  background-color: rgba(236, 236, 236, 0.788);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.katex {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.button.number {
+  background-color: rgb(30, 35, 32);
+  color: rgb(255, 255, 255);
+}
+
+.button.operator {
+  background-color: rgb(112, 112, 112);
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+.button.equals {
+  border: none;
+  background-color: rgb(180, 111, 20);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  grid-column: span 1;
+  transition: all 0.2s ease;
+}
+
+.button.equals:hover {
+  background-color: rgb(220, 140, 30);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

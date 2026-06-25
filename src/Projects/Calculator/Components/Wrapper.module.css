@@ -1,0 +1,32 @@
+.wrapper{
+    width: 340px;
+    height: 540px;
+    background-color: #485461;
+    border-radius: 10px;
+    padding:10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+@keyframes float {
+  0%   { transform: translateY(0px) scale(1.0); }
+  50%  { transform: translateY(-5px) scale(1.02); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+@keyframes shadowFloat {
+  0%   { box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65); }
+  50%  { box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28); }
+  100% { box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65); }
+}
+
+.wrapper {
+    animation: float 3s ease-in-out infinite, shadowFloat 3s ease-in-out infinite;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65);
+}
+
+.wrapper:hover {
+  transition: 0.4s ease;
+  cursor: pointer;
+  animation-play-state: paused;
+}

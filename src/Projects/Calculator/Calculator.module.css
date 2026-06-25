@@ -1,0 +1,44 @@
+.calculator {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 16px;
+  background: linear-gradient(135deg, #1a1a18, #262522);
+}
+
+.Header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  gap: 0.4rem;
+}
+
+.Header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.Name h3 {
+  margin: 0;
+  margin-right: 20px;
+  margin-left: auto;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.headerLogo {
+  width: 25px;
+}
+
