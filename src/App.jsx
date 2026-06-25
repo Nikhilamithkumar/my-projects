@@ -50,7 +50,7 @@ export default function App() {
   return (
     <>
       <div className="header">
-        <img src="src/assets/profile.jpg" className="profile-img" />
+        <img src="./src/assets/profile.jpg" className="profile-img" />
         <div className="header-text">
           <h1 className="header-name">Nikhil A</h1>
           <p className="header-tagline"></p>
