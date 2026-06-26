@@ -1,44 +1,187 @@
-.calculator {
-  min-height: 100vh;
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 24px;
-  gap: 16px;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0;
   background: linear-gradient(135deg, #1a1a18, #262522);
 }
 
-.Header {
-  position: sticky;
-  top: 0;
-  width: 100%;
+.wrapper {
+  background: #1e1e1b;
+  border: 0.5px solid #3a3830;
+  border-radius: 16px;
+  width: 560px;
+  padding: 2rem;
+  text-align: center;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-form {
+  width: 560px;
+  display: flex;
   align-items: center;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.85);
-  gap: 0.4rem;
+  gap: 10px;
+  padding: 20px;
+  background: #1e1e1b;
+  border: 0.5px solid #3a3830;
+  border-radius: 16px;
+  margin-bottom: 1rem;
 }
 
-.Header h2 {
-  margin: 0;
-  color: #ffffff;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-.Name h3 {
-  margin: 0;
-  margin-right: 20px;
-  margin-left: auto;
-  color: #ffffff;
+.search-input {
+  flex: 1;
+  padding: 10px;
   font-size: 1rem;
-  font-weight: 500;
+  border: 0.5px solid #3a3830;
+  border-radius: 8px;
+  background-color: #262520;
+  color: #e0e0e0;
+  outline: none;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.2s, background-color 0.2s;
 }
 
-.headerLogo {
-  width: 25px;
+.search-input::placeholder {
+  color: #5a5850;
 }
 
+.search-input:hover,
+.search-input:focus {
+  background-color: #2e2e2a;
+  border-color: #e94560;
+}
+
+.search-btn {
+  width: 44px;
+  height: 44px;
+  background-color: #262520;
+  border: 0.5px solid #3a3830;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.search-btn:hover {
+  background-color: #e94560;
+  border-color: #e94560;
+}
+
+.search-btn img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(2);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.city {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.condition {
+  font-size: 1rem;
+  color: #8a8880;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 1.25rem 0;
+  border-top: 0.5px solid #3a3830;
+  border-bottom: 0.5px solid #3a3830;
+}
+
+.weather-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.weather-detail-container p:first-child {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5a5850;
+}
+
+.weather-detail-container p:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.forecast-header {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5a5850;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.forecast-days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.forecast-day p:first-child {
+  font-size: 0.75rem;
+  color: #5a5850;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.forecast-day p:last-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.error {
+  color: #e0e0e0;
+  background: rgba(233, 69, 96, 0.15);
+  border: 0.5px solid #e94560;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}

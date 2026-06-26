@@ -63,7 +63,7 @@ export default function App() {
       <div className="header">
         <img src={ProfileImg} className="profile-img" />
         <div className="header-text">
-          <h1 className="header-name">Nikhil A</h1>
+          <h1 className="header-name">NIKHIL A</h1>
           <p className="header-tagline"></p>
           <div className="header-divider" />
           <p className="header-desc">

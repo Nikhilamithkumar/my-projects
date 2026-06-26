@@ -1,4 +1,5 @@
 import styles from './weather.module.css';
+import searchIcon from './assets/search.webp';
 import { useEffect, useState } from 'react'
 
 function weather() {
@@ -69,7 +70,7 @@ function weather() {
           placeholder='Enter city name'
           className = {styles['search-input']}/>
         <button type="submit" className={styles['search-btn']}>
-          <img src="/assets/search.webp" alt="Search"/>
+          <img src={searchIcon} alt="Search"/>
         </button>
       </form>
     </div>
