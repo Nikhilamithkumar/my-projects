@@ -27,14 +27,16 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 0.5px solid #3a3830;
+  background-color: #1e1e1b;
+  border: 1px solid #5a5850;
+  
   border-radius: 16px;
   overflow: hidden;
 }
 
 .header-banner {
   width: 100%;
-  height: 120px;
+  height: 220px;
   background: linear-gradient(135deg, #2e0a10, #1a1040, #001f3f);
 }
 
@@ -47,56 +49,57 @@ body {
 .header-profile {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
-  padding: 0 2rem;
-  margin-top: -48px;
+  gap: 28px;
+  padding: 0 2.5rem;
+  margin-top: -64px;
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #1a1a18;
+  border: 4px solid #1e1e1b;
   flex-shrink: 0;
 }
 
 .header-info {
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .header-name {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .header-role {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: #e0e0e0;
 }
 
 .header-college {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #8a8880;
 }
 
 .header-divider {
-  width: calc(100% - 4rem);
+  width: calc(100% - 5rem);
   height: 0.5px;
   background-color: #3a3830;
-  margin: 0.75rem 2rem;
+  margin: 1rem 2.5rem;
 }
 
 .header-desc {
-  font-size: 0.9rem;
-  color: #8a8880;
-  line-height: 1.8;
-  padding: 0 2rem 1.5rem;
+  font-size: 1rem;
+  color: #a0a098;
+  line-height: 1.9;
+  padding: 0 2.5rem 2rem;
+  max-width: 680px;
 }
 
 .section {
