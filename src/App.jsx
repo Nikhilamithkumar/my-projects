@@ -29,7 +29,7 @@ const education = [
     level:  "Bachelor of Technology (B.Tech)",
     school: "VIT University, Vellore",
     board:  "Electronics & Communication Engineering",
-    year:   "2024 – Present",
+    year:   "2025 – Present",
     score:  "CGPA: 9.02 / 10",
   },
 ];
