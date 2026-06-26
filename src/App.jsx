@@ -87,7 +87,7 @@ export default function App() {
           <div className="header-info">
             <h1 className="header-name">Nikhil A</h1>
             <p className="header-role">Electronics Engineering Student</p>
-            <p className="header-college">Your College Name · Chennai, India</p>
+            <p className="header-college">VIT University · Vellore · India </p>
           </div>
         </div>
         <div className="header-divider" />
@@ -98,7 +98,7 @@ export default function App() {
       </div>
 
       <section className="section">
-        <p className="section-heading">Education</p>
+        <p className="section-heading">---------------Education---------------</p>
         <div className="edu-grid">
           {education.map((e, i) => (
             <div key={i} className="edu-card">
@@ -115,7 +115,7 @@ export default function App() {
       </section>
 
       <section className="section">
-        <p className="section-heading">Skills</p>
+        <p className="section-heading">---------------Skills---------------</p>
         <div className="skills-grid">
           {skills.map((s, i) => (
             <div key={i} className="skill-card">
@@ -138,7 +138,7 @@ export default function App() {
       </section>
 
       <section className="section">
-        <p className="section-heading">Projects</p>
+        <p className="section-heading">---------------Projects--------------- </p>
         <div className="menu-grid">
           {projects.map(p => (
             <div key={p.id} className="menu-card" onClick={() => setActive(p.id)}>
@@ -154,7 +154,7 @@ export default function App() {
       </section>
 
       <section className="section">
-        <p className="section-heading">Contact</p>
+        <p className="section-heading">---------------Contact---------------</p>
         <div className="contact-grid">
           {contacts.map((c, i) => (
             <a
