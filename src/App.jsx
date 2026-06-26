@@ -2,6 +2,7 @@ import { useState } from "react";
 import SnakeGame  from "./Projects/Snake/SnakeGame";
 import TicTacToe  from "./Projects/TicTacToe/tictactoe";
 import Calculator from "./Projects/Calculator/Calculator";
+import ProfileImg from "./Public/profile.jpg";
 import "./index.css";
 
 const projects = [
@@ -50,7 +51,7 @@ export default function App() {
   return (
     <>
       <div className="header">
-        <img src="Public\profile.jpg" className="profile-img" />
+        <img src={ProfileImg} className="profile-img" />
         <div className="header-text">
           <h1 className="header-name">Nikhil A</h1>
           <p className="header-tagline"></p>
