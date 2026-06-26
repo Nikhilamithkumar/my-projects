@@ -9,6 +9,7 @@
   background: linear-gradient(135deg, #1a1a18, #262522);
   color: #f5f5f4;
   font-family: 'Segoe UI', sans-serif;
+  overflow: hidden; /* prevent page scrolling when on the Snake page */
 }
 
 .app h1 {
