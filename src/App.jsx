@@ -2,6 +2,7 @@ import { useState } from "react";
 import SnakeGame  from "./Projects/Snake/SnakeGame";
 import TicTacToe  from "./Projects/TicTacToe/tictactoe";
 import Calculator from "./Projects/Calculator/Calculator";
+import Weather from "./Projects/Weather/weather";
 import ProfileImg from "./Public/profile.jpg";
 import "./index.css";
 
@@ -33,6 +34,15 @@ const projects = [
     icon: "03",
     component: <Calculator />,
   },
+  {
+    id: "weather",
+    label: "Weather App",
+    desc: "Real-time weather information",
+    iconBg: "#001f3f",
+    iconColor: "#0074D9",
+    icon: "04",
+    component: <Weather />,
+  }
 ];
 
 export default function App() {
